@@ -1,0 +1,20 @@
+body {
+    box-sizing: border-box;
+}
+
+.container {
+    border: 2px solid red;
+    
+}
+
+.sidebar {
+    background: rgb(27, 126, 202);
+}
+
+.header {
+    background: rgb(225, 225, 225);
+}
+
+.main {
+    background: rgb(219, 226, 237);
+}
