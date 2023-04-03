@@ -1,10 +1,12 @@
 :root {
-    --sidebar-color: rgb(27, 126, 202);
-    --header-color: ghostwhite;
-    --main-color: rgb(219, 226, 237);
+    --sidebar-color: #0ea5e9; 
+    --header-color: white;
+    --main-color: #e5e7eb;
 }
 body {
     box-sizing: border-box;
+    font-family: 'Roboto', serif;
+    
 }
 
 .container {
@@ -19,8 +21,11 @@ body {
 
 .sidebar {
     background: var(--sidebar-color);
-    
+    color: var(--header-color);
     grid-area: sidebar;
+    display: grid;
+    grid-template-rows: 1fr 2fr 5fr;
+    font-size: 1.1rem;
 }
 
 .header {
@@ -31,4 +36,8 @@ body {
 .main {
     background: var(--main-color);
     grid-area: main;
+}
+a:link, a:visited {
+    color: var(--header-color);
+    text-decoration: none;
 }
