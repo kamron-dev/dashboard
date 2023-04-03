@@ -1,20 +1,35 @@
+:root {
+    --sidebar-color: rgb(27, 126, 202);
+    --header-color: rgb(225, 225, 225);
+    --main-color: rgb(219, 226, 237);
+}
 body {
     box-sizing: border-box;
 }
 
 .container {
     border: 2px solid red;
-    
+    height: 98vh;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 5fr;
+    grid-template-areas: 
+        "sidebar header"
+        "sidebar main";
 }
 
 .sidebar {
-    background: rgb(27, 126, 202);
+    background: var(--sidebar-color);
+    
+    grid-area: sidebar;
 }
 
 .header {
     background: rgb(225, 225, 225);
+    grid-area: header;
 }
 
 .main {
     background: rgb(219, 226, 237);
+    grid-area: main;
 }
