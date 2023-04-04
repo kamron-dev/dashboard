@@ -29,6 +29,9 @@ body {
     grid-template-columns: 55px 1fr;
     height: 100%;
 }
+#header-h3 {
+    grid-column: 2;
+}
 .dashboard-btns1 {
     grid-column: 2;
     grid-row: 2;
@@ -42,6 +45,7 @@ body {
 }
 .dashboard-btns1 > nav, .dashboard-btns2 > nav {
     height: 75%;
+    margin-left: -30px;
 }
 
 .dashboard-btns2 {
