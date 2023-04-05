@@ -25,7 +25,7 @@ body {
     color: var(--header-color);
     grid-area: sidebar;
     display: grid;
-    grid-template-rows: 55px repeat(2, 1fr);
+    grid-template-rows: 65px repeat(2, 1fr);
     grid-template-columns: 55px 1fr;
     height: 100%;
 }
@@ -38,6 +38,16 @@ body {
     grid-column: 2;
     align-self: center;
 }
+.btns1-icons, .btns2-icons {
+    grid-column: 1;
+    height: 75%;
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    justify-items: center;
+    align-items: center;
+    font-size: 20px;
+    margin-top: 5px;
+}
 .dashboard-btns1 {
     grid-column: 2;
     grid-row: 2;
@@ -48,6 +58,7 @@ body {
     height: 100%;
     display: grid;
     grid-template-rows: repeat(6, 1fr);
+    font-size: 18px;
 }
 .dashboard-btns1 > nav, .dashboard-btns2 > nav {
     height: 75%;
