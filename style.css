@@ -105,13 +105,25 @@ body {
 input[type=search] {
     justify-self: center;
     align-self: center;
-    width: 85%;
+    width: 90%;
     height: 30px;
     border: 1px solid var(--header-color);
     background: var(--main-color);
     border-radius: 13px;
     grid-area: search;
     
+}
+
+.searchdiv > img {
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 50%;
+    margin-left: 45px;
+}
+
+#account-name {
+    line-height: 0.5rem;
+    margin-left: 55px;
 }
 
 .main {
