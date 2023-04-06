@@ -159,7 +159,7 @@ input[type=search] {
     height: 2rem;
     width: 6rem;
     align-self: center;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     background: var(--sidebar-color);
     color: var(--header-color);
     border: 1px solid var(--main-color);
@@ -168,6 +168,32 @@ input[type=search] {
 .main {
     background: var(--main-color);
     grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(2, 3fr) 2fr;
+    grid-template-rows: 45px repeat(3, 1fr);
+    
+}
+
+#announcements {
+    grid-column: 3;
+}
+
+#projects-container {
+    grid-row: 2 / span 3;
+    grid-column: 1 / span 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.project-card {
+    height: 170px;
+    width: 280px;
+    background: var(--header-color);
+    margin: 15px;
+}
+#announcements-container {
+    grid-row: 2 / span 3;
 }
 a:link, a:visited {
     color: var(--header-color);
