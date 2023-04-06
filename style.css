@@ -126,6 +126,45 @@ input[type=search] {
     margin-left: 55px;
 }
 
+#header-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+}
+
+#ring-logo {
+    font-size: 1.5rem;
+    justify-self: end;
+    align-self: center;
+    margin-right: -15px;
+}
+
+#header-buttons > img {
+    height: 2.6rem;
+    width: 2.6rem;
+    border-radius: 50%;
+    justify-self: center;
+    align-self: center;
+}
+
+#header-buttons > p {
+    justify-self: start;
+    align-self: center;
+    font-size: 1rem;
+    margin-left: -15px;
+}
+
+#header-buttons > button {
+    border-radius: 2rem;
+    height: 2rem;
+    width: 6rem;
+    align-self: center;
+    margin-bottom: 15px;
+    background: var(--sidebar-color);
+    color: var(--header-color);
+    border: 1px solid var(--main-color);
+}
+
 .main {
     background: var(--main-color);
     grid-area: main;
