@@ -175,6 +175,10 @@ input[type=search] {
     
 }
 
+.project-card > p {
+    color: #777777;
+}
+
 #announcements-h4 {
     grid-column: 3;
 
@@ -190,8 +194,8 @@ input[type=search] {
 }
 
 .project-card {
-    height: 190px;
-    width: 307.42px;
+    height: 200px;
+    width: 324px;
     background: var(--header-color);
     margin: 15px;
     font-size: 0.8rem;
@@ -200,10 +204,10 @@ input[type=search] {
     box-shadow: var(--box-shadow);
 }
 
-div.card-icons {
+div .card-icons {
     position: relative;
     width: 6rem;
-    left: 165px;
+    left: 185px;
     top: 40px;
     display: grid;
     grid-auto-flow: column;
