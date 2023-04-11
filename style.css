@@ -175,20 +175,72 @@ input[type=search] {
     
 }
 
-.project-card > p {
+.project-card > p, #announcements > p {
     color: #777777;
+    margin: 12px;
+    font-size: 0.8rem;
+}
+
+.project-card > h5, #announcements > h5 {
+    font-size: 1rem;
+    margin: 12px;
+    
 }
 
 #announcements-h4 {
     grid-column: 3;
-
 }
 
+#trending-h4 {
+    grid-column: 1;
+    grid-row: 2;
+    margin-top: 1px;
+}
+
+#trending {
+    display: grid;
+    grid-template-columns: 45px 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+        "pic-1 ."
+        "pic-2 ."
+        "pic-3 ."
+        "pic-4 .";
+}
+
+#trending > img {
+    height: 2.6rem;
+    width: 2.6rem;
+    border-radius: 50%;
+    justify-self: center;
+    align-self: center;
+    margin-left: 18px;
+    border: 1px solid var(--sidebar-color);
+}
+#trending > p {
+    font-size: 0.8rem;
+    justify-self: start;
+    align-self: center;
+    margin-left: 20px;
+}
+
+#pic-1{
+grid-area: pic-1;
+}
+#pic-2 {
+    grid-area: pic-2;
+}
+#pic-3 {
+    grid-area: pic-3;
+}
+#pic-4 {
+    grid-area: pic-4;
+}
 #projects-container {
     grid-row: 2 / span 3;
     grid-column: 1 / span 2;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));    
+    grid-template-columns: repeat(auto-fit, minmax(324px, 1fr));    
     grid-template-rows: repeat(3, 1fr);
     gap: 10px;
 }
@@ -198,7 +250,6 @@ input[type=search] {
     width: 324px;
     background: var(--header-color);
     margin: 15px;
-    font-size: 0.8rem;
     border-radius: 8px;
     border-left: 0.5rem solid #e5950b;
     box-shadow: var(--box-shadow);
@@ -218,7 +269,7 @@ div .card-icons {
 #announcements-container {
     grid-row: 2 / span 3;
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 35px 1fr;
     grid-template-columns: 1fr;
 }
 #announcements {
@@ -232,7 +283,7 @@ div .card-icons {
 }
 
 #trending {
-    grid-row: 2;
+    grid-row: 3;
     background: var(--header-color);
     height: 95%;
     width: 90%;
@@ -249,4 +300,8 @@ a:link, a:visited {
 
 ul {
     list-style: none;
+}
+
+hr {
+    width: 80%;
 }
